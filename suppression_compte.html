@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suppression de compte – Mots Zen</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 600px; margin: 60px auto; padding: 0 20px; color: #333; line-height: 1.7; }
+  h1 { color: #1A7A72; }
+  .card { background: #f0fdfb; border: 1px solid #2EC4B6; border-radius: 12px; padding: 30px; margin-top: 30px; }
+  label { display: block; margin-bottom: 6px; font-weight: bold; color: #1A7A72; }
+  input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; font-size: 15px; box-sizing: border-box; margin-bottom: 16px; }
+  button { background: #2EC4B6; color: white; border: none; padding: 12px 30px; border-radius: 8px; font-size: 16px; cursor: pointer; width: 100%; }
+  button:hover { background: #1A7A72; }
+  .note { font-size: 13px; color: #888; margin-top: 20px; }
+  footer { margin-top: 40px; font-size: 12px; color: #aaa; text-align: center; }
+</style>
+</head>
+<body>
+
+<h1>Supprimer mon compte Mots Zen</h1>
+<p>Vous pouvez demander la suppression de votre compte et de toutes les données associées en remplissant le formulaire ci-dessous.</p>
+<p>Votre demande sera traitée dans un délai de <strong>7 jours ouvrés</strong>.</p>
+
+<div class="card">
+  <form action="https://formsubmit.co/motszen.app@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Demande de suppression de compte Mots Zen">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://snowmanstudioapp.github.io/motszen-privacy/confirmation.html">
+
+    <label for="email">Adresse e-mail du compte Google associé *</label>
+    <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+
+    <label for="raison">Raison (optionnel)</label>
+    <textarea id="raison" name="raison" rows="3" placeholder="Je souhaite supprimer mon compte car..."></textarea>
+
+    <button type="submit">Envoyer la demande de suppression</button>
+  </form>
+</div>
+
+<p class="note">Les données supprimées incluent : votre profil, votre progression et toutes les données associées à votre compte. Cette action est irréversible.</p>
+
+<footer>© 2026 Mots Zen – <a href="politique_confidentialite_mots_zen.html" style="color:#2EC4B6">Politique de confidentialité</a></footer>
+
+</body>
+</html>
